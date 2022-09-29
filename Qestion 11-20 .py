@@ -87,21 +87,34 @@ number = [int(x) for x in number]
 
 # else:
 #     print(sum(number))
-
+# Here we are comparing the length of the number list and the number set
+# Since there are no duplicates in a python set the length will decrease if there are duplicates
+# And if the length is equal we can conclude that all the elements are distinct
+# Based on that we can output the correct result
 if len(number) == len(set(number)):
     print(sum(number))
 else:
     print(0)'''
 
 #20.Return true if the two given integer values are equal or their sum or difference is 5
-a = int(input("Enter the first number : "))
+'''a = int(input("Enter the first number : "))
 b = int(input("Enter the second number : "))
 sum = a+b
 diff = abs(a-b)
 if a == b or sum == 5 or diff == 5:
     print(True)
 else:
-    print(sum or diff)
+    print(sum or diff)'''
+
+
+
+'''a = int(input("Enter number 1: "))
+b = int(input("Enter number 2: "))
+
+if a - b == 0 or abs(a - b) == 5 or a + b == 5:
+    print(True)
+else:
+    print(False)'''
 
 
 
