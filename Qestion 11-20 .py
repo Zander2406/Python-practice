@@ -1,4 +1,4 @@
-#11. Given number is even or odd
+#11.Given number is even or odd
 '''a = int(input("Enter a number : ")) %2
 # type = a % 2
 if a > 0:
@@ -6,13 +6,13 @@ if a > 0:
 else:
     print("This is an even number")'''
 
-#12. Area of a Triangle
+#12.Area of a Triangle
 '''b = int(input("Base of the triangle : "))
 h = int(input("Height of the triangle : "))
 area = 1/2*b*h
 print("Area of the triangle is : ", area)'''
 
-#13. Sum of two given integers. However, if the sum is between 15 to 20 it will return 20
+#13.Sum of two given integers. However, if the sum is between 15 to 20 it will return 20
 '''a = int(input("Enter a number : "))
 b = int(input("Enter a number : "))
 sum = a+b
@@ -29,14 +29,14 @@ if str("ls") in word:
 else:
     print(str("ls")+word)'''
 
-#15. Count the number 4 in a given list
+#15.Count the number 4 in a given list
 '''lst = input("Enter the numbers : ")
 lst = lst.split(", ")
 lst = [int(x) for x in lst]
 lst_count = lst.count(4)
 print(lst_count)'''
 
-#16. Test whether a passed letter is a vowel or not.
+#16.Test whether a passed letter is a vowel or not.
 '''letter = input("Enter a letter : ")
 lst = ("a" , "e", "i", "o", "u")
 if letter in lst:
@@ -44,7 +44,7 @@ if letter in lst:
 else:
     print("It is consonant.")'''
 
-#17. Concatenate all elements in a list into a string and return it.
+#17.Concatenate all elements in a list into a string and return it.
 '''lst = input("Enter any element : ")
 lst = lst.split(" ")
 rslt =  ""
@@ -77,14 +77,31 @@ for number in numbers:
         final_list.append(number)
 print(final_list)'''
 
+#19.Sum of three given integers. However, if two values are equal sum will be zero.
+'''number = input("Enter the numbers : ")
+number = number.split(" ")
+number = [int(x) for x in number]
 
+# if number[0] == number[1] or number[1] == number[2] or number[0] == number[2]:
+#     print(0)
 
+# else:
+#     print(sum(number))
 
+if len(number) == len(set(number)):
+    print(sum(number))
+else:
+    print(0)'''
 
-
-
-
-
+#20.Return true if the two given integer values are equal or their sum or difference is 5
+a = int(input("Enter the first number : "))
+b = int(input("Enter the second number : "))
+sum = a+b
+diff = abs(a-b)
+if a == b or sum == 5 or diff == 5:
+    print(True)
+else:
+    print(sum or diff)
 
 
 
