@@ -1,0 +1,15 @@
+To add files in your git repositories
+1.git status
+2.git init
+3.git add (-A for all)
+4.git commit -m "Add any massege"
+5.git remote add origin (link of the repository)
+6.git push origin master
+
+To clone a repositories
+7.git clone(only one time for that perticular file)
+
+To sync local file with updated repositories
+8.git fetch --prune origin
+9.git reset --hard origin/master
+10.git clean -f -d
