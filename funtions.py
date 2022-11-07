@@ -33,15 +33,15 @@ print(temp)
 if temp >= 50:
     print("Scochares day")'''
 
-def factorial(number):
+'''def factorial(number):
     if number == 0 or number == 1:
         return 1
     return number * factorial(number-1) 
 
-
-num = int(input("Enter a digit = "))
-fact = factorial(num)
-print(fact)
+if __name__ == '__main__': # if we do not write this and import the functions somewhere else entire code will be imported instead of only function.
+   num = int(input("Enter a digit = "))
+   fact = factorial(num)
+   print(fact)'''
 
 
 

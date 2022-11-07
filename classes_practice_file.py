@@ -67,7 +67,7 @@ print(Honda.color, SchoolBus.color)'''
 # on full fare as a maintenance charge. So total fare for bus instance will become 
 # the final amount = total fare + 10% of the total fare.
 
-class Vehicle:
+'''class Vehicle:
 
     def __init__(self, name, mileage, capacity):
         self.name = name
@@ -83,7 +83,7 @@ class Bus(Vehicle):
 
 VolvoBus = Bus("VolvoBus", 20, 50)
 print(VolvoBus.fare())
-
+'''
 
 
 
